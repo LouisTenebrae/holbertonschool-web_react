@@ -4,13 +4,12 @@ interface Student {
     age: number
     location: string
 }
-var student1
-var student2
-var studentList: Student[] = [student1, student2]
+let student1: Student
+let student2: Student
+const studentList: Student[] = [student1, student2]
 
 function renderTable(students: Student[]) {
     const table = document.createElement("table");
-    table.border = "1";
 
     const headerRow = document.createElement("tr");
     const headerFirstName = document.createElement("th");
